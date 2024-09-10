@@ -1,0 +1,12 @@
+ydb-old-1 ydb-old-1.ru-central1.internal zeit-cluster.zonne
+ydb-old-2 ydb-old-2.ru-central1.internal zeit-cluster.zonne
+ydb-old-3 ydb-old-3.ru-central1.internal zeit-cluster.zonne
+ydb-old-4 ydb-old-4.ru-central1.internal zeit-cluster.zonne
+ydb-old-5 ydb-old-5.ru-central1.internal zeit-cluster.zonne
+ydb-old-6 ydb-old-6.ru-central1.internal zeit-cluster.zonne
+ydb-old-7 ydb-old-7.ru-central1.internal zeit-cluster.zonne
+ydb-old-8 ydb-old-8.ru-central1.internal zeit-cluster.zonne
+ydb-old-9 ydb-old-9.ru-central1.internal zeit-cluster.zonne
+ydb-old-10 ydb-old-10.ru-central1.internal zeit-cluster.zonne
+ydb-old-11 ydb-old-11.ru-central1.internal zeit-cluster.zonne
+ydb-old-12 ydb-old-12.ru-central1.internal zeit-cluster.zonne
