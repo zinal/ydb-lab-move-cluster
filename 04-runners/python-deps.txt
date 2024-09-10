@@ -10,5 +10,9 @@ cd ..
 pssh --version
 pscp --version
 
+cd venv/bin
+ln -s pssh parallel-ssh
+ln -s pscp parallel-scp
+
 tar cf - venv | xz -v -T8 >python3-venv-redos73.tar.xz
 scp yc-user@runner-1:Lab/python3-venv-redos73.tar.xz .
