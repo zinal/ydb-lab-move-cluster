@@ -2,4 +2,13 @@ sudo yum install g++ python3-devel
 cd Lab/
 python3 -m venv venv
 . ./venv/bin/activate
-pip3 install ydb numpy requests
+pip3 install ydb numpy requests pscp pssh
+
+cd venv
+patch -p1 <../pssh-fix.patch
+cd ..
+pssh --version
+pscp --version
+
+tar cf - venv | xz -v -T8 >python3-venv-redos73.tar.xz
+scp yc-user@runner-1:Lab/python3-venv-redos73.tar.xz .
