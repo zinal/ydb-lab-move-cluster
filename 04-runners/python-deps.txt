@@ -1,0 +1,5 @@
+sudo yum install g++ python3-devel
+cd Lab/
+python3 -m venv venv
+. ./venv/bin/activate
+pip3 install ydb numpy requests

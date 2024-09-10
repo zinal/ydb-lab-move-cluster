@@ -1,0 +1,31 @@
+diff -ur venv.orig/lib/python3.8/site-packages/psshlib/cli.py venv/lib/python3.8/site-packages/psshlib/cli.py
+--- venv.orig/lib/python3.8/site-packages/psshlib/cli.py	2024-09-10 16:27:36.873731970 +0300
++++ venv/lib/python3.8/site-packages/psshlib/cli.py	2024-09-10 16:28:11.266702852 +0300
+@@ -6,7 +6,7 @@
+ import shlex
+ import sys
+ import textwrap
+-import version
++from . import version
+ 
+ _DEFAULT_PARALLELISM = 32
+ _DEFAULT_TIMEOUT     = 0 # "infinity" by default
+diff -ur venv.orig/lib/python3.8/site-packages/psshlib/manager.py venv/lib/python3.8/site-packages/psshlib/manager.py
+--- venv.orig/lib/python3.8/site-packages/psshlib/manager.py	2024-09-10 16:27:36.873731970 +0300
++++ venv/lib/python3.8/site-packages/psshlib/manager.py	2024-09-10 16:30:55.677563656 +0300
+@@ -6,6 +6,7 @@
+ import signal
+ import sys
+ import threading
++import fcntl
+ 
+ try:
+     import queue
+@@ -209,6 +210,7 @@
+ 
+         # Setup the wakeup file descriptor to avoid hanging on lost signals.
+         wakeup_readfd, wakeup_writefd = os.pipe()
++        fcntl.fcntl(wakeup_writefd, fcntl.F_SETFL, os.O_NONBLOCK)
+         self.register_read(wakeup_readfd, self.wakeup_handler)
+         # TODO: remove test when we stop supporting Python <2.5
+         if hasattr(signal, 'set_wakeup_fd'):

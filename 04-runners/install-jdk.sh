@@ -6,7 +6,7 @@ N=3
 JDK=`ls OpenJDK21U* | sort | tail -n 1`
 U=yc-user
 
-echo "Deploying JDKs!"
+echo "** Deploying JDKs!"
 
 for x in `seq 1 ${N}`; do
   ssh ${U}@runner-${x} mkdir -pv Lab
@@ -33,4 +33,4 @@ for x in `seq 1 ${N}`; do
   ssh ${U}@runner-${x} sudo ln -sv /opt/jdk21/bin/java /usr/local/bin
 done
 
-echo "Done!"
+echo "** Done!"
