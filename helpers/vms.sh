@@ -50,7 +50,7 @@ done
 fi # end disks creation
 fi
 
-echo "Creating static node VMs..."
+echo "Creating VMs..."
 for i in `seq ${ydb_nodes_begin} ${ydb_nodes_end}`; do
   vm_name="${host_base}${i}"
   vm_disk_boot="${host_base}${i}-boot"
