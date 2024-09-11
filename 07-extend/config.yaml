@@ -1,4 +1,4 @@
-storage_config_generation: 0
+storage_config_generation: 1
 static_erasure: mirror-3-dc
 host_configs:
 - drive:
@@ -102,84 +102,84 @@ hosts:
     rack: '12'
 - node_id: 101
   host: ydb-new-1
-  host_config_id: 1
+  host_config_id: 2
   walle_location:
     body: 1
     data_center: 'zone-a'
     rack: '1'
 - node_id: 102
   host: ydb-new-2
-  host_config_id: 1
+  host_config_id: 2
   walle_location:
     body: 2
     data_center: 'zone-a'
     rack: '2'
 - node_id: 103
   host: ydb-new-3
-  host_config_id: 1
+  host_config_id: 2
   walle_location:
     body: 3
     data_center: 'zone-a'
     rack: '3'
 - node_id: 104
   host: ydb-new-4
-  host_config_id: 1
+  host_config_id: 2
   walle_location:
     body: 4
     data_center: 'zone-a'
     rack: '4'
 - node_id: 105
   host: ydb-new-5
-  host_config_id: 1
+  host_config_id: 2
   walle_location:
     body: 5
     data_center: 'zone-b'
     rack: '5'
 - node_id: 106
   host: ydb-new-6
-  host_config_id: 1
+  host_config_id: 2
   walle_location:
     body: 6
     data_center: 'zone-b'
     rack: '6'
 - node_id: 107
   host: ydb-new-7
-  host_config_id: 1
+  host_config_id: 2
   walle_location:
     body: 7
     data_center: 'zone-b'
     rack: '7'
 - node_id: 108
   host: ydb-new-8
-  host_config_id: 1
+  host_config_id: 2
   walle_location:
     body: 8
     data_center: 'zone-b'
     rack: '8'
 - node_id: 109
   host: ydb-new-9
-  host_config_id: 1
+  host_config_id: 2
   walle_location:
     body: 9
     data_center: 'zone-c'
     rack: '9'
 - node_id: 110
   host: ydb-new-10
-  host_config_id: 1
+  host_config_id: 2
   walle_location:
     body: 10
     data_center: 'zone-c'
     rack: '10'
 - node_id: 111
   host: ydb-new-11
-  host_config_id: 1
+  host_config_id: 2
   walle_location:
     body: 11
     data_center: 'zone-c'
     rack: '11'
 - node_id: 112
   host: ydb-new-12
-  host_config_id: 1
+  host_config_id: 2
   walle_location:
     body: 12
     data_center: 'zone-c'
