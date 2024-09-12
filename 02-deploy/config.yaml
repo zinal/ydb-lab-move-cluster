@@ -8,84 +8,84 @@ host_configs:
     type: SSD
   host_config_id: 1
 hosts:
-- node_id: 1
+- node_id: 11
   host: ydb-old-1
   host_config_id: 1
   walle_location:
     body: 1
     data_center: 'zone-a'
     rack: '1'
-- node_id: 2
+- node_id: 12
   host: ydb-old-2
   host_config_id: 1
   walle_location:
     body: 2
     data_center: 'zone-a'
     rack: '2'
-- node_id: 3
+- node_id: 13
   host: ydb-old-3
   host_config_id: 1
   walle_location:
     body: 3
     data_center: 'zone-a'
     rack: '3'
-- node_id: 4
+- node_id: 14
   host: ydb-old-4
   host_config_id: 1
   walle_location:
     body: 4
     data_center: 'zone-a'
     rack: '4'
-- node_id: 5
+- node_id: 21
   host: ydb-old-5
   host_config_id: 1
   walle_location:
     body: 5
     data_center: 'zone-b'
     rack: '5'
-- node_id: 6
+- node_id: 22
   host: ydb-old-6
   host_config_id: 1
   walle_location:
     body: 6
     data_center: 'zone-b'
     rack: '6'
-- node_id: 7
+- node_id: 23
   host: ydb-old-7
   host_config_id: 1
   walle_location:
     body: 7
     data_center: 'zone-b'
     rack: '7'
-- node_id: 8
+- node_id: 24
   host: ydb-old-8
   host_config_id: 1
   walle_location:
     body: 8
     data_center: 'zone-b'
     rack: '8'
-- node_id: 9
+- node_id: 31
   host: ydb-old-9
   host_config_id: 1
   walle_location:
     body: 9
     data_center: 'zone-c'
     rack: '9'
-- node_id: 10
+- node_id: 32
   host: ydb-old-10
   host_config_id: 1
   walle_location:
     body: 10
     data_center: 'zone-c'
     rack: '10'
-- node_id: 11
+- node_id: 33
   host: ydb-old-11
   host_config_id: 1
   walle_location:
     body: 11
     data_center: 'zone-c'
     rack: '11'
-- node_id: 12
+- node_id: 34
   host: ydb-old-12
   host_config_id: 1
   walle_location:
@@ -100,41 +100,41 @@ blob_storage_config:
       rings:
       - fail_domains:
         - vdisk_locations:
-          - node_id: 1
+          - node_id: 11
             pdisk_category: SSD
             path: /dev/disk/by-partlabel/ydb_disk_1
         - vdisk_locations:
-          - node_id: 2
+          - node_id: 12
             pdisk_category: SSD
             path: /dev/disk/by-partlabel/ydb_disk_1
         - vdisk_locations:
-          - node_id: 3
-            pdisk_category: SSD
-            path: /dev/disk/by-partlabel/ydb_disk_1
-      - fail_domains:
-        - vdisk_locations:
-          - node_id: 4
-            pdisk_category: SSD
-            path: /dev/disk/by-partlabel/ydb_disk_1
-        - vdisk_locations:
-          - node_id: 5
-            pdisk_category: SSD
-            path: /dev/disk/by-partlabel/ydb_disk_1
-        - vdisk_locations:
-          - node_id: 6
+          - node_id: 13
             pdisk_category: SSD
             path: /dev/disk/by-partlabel/ydb_disk_1
       - fail_domains:
         - vdisk_locations:
-          - node_id: 7
+          - node_id: 21
             pdisk_category: SSD
             path: /dev/disk/by-partlabel/ydb_disk_1
         - vdisk_locations:
-          - node_id: 8
+          - node_id: 22
             pdisk_category: SSD
             path: /dev/disk/by-partlabel/ydb_disk_1
         - vdisk_locations:
-          - node_id: 9
+          - node_id: 23
+            pdisk_category: SSD
+            path: /dev/disk/by-partlabel/ydb_disk_1
+      - fail_domains:
+        - vdisk_locations:
+          - node_id: 31
+            pdisk_category: SSD
+            path: /dev/disk/by-partlabel/ydb_disk_1
+        - vdisk_locations:
+          - node_id: 32
+            pdisk_category: SSD
+            path: /dev/disk/by-partlabel/ydb_disk_1
+        - vdisk_locations:
+          - node_id: 33
             pdisk_category: SSD
             path: /dev/disk/by-partlabel/ydb_disk_1
 
@@ -153,7 +153,7 @@ domains_config:
         vdisk_kind: Default
   state_storage:
   - ring:
-      node: [1, 2, 3, 4, 5, 6, 7, 8, 9]
+      node: [11, 12, 13, 21, 22, 23, 31, 32, 33]
       nto_select: 9
     ssid: 1
   security_config:
