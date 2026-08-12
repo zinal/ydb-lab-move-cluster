@@ -612,9 +612,9 @@ bash 05-vms.sh
             ssid: 1
      ```
 
-> [!NOTE]
-> Важно не менять позицию заменяемого элемента в списке и не перетасовывать другие элементы. Признак изменения позиции - при рестарте очередной узел "не видит" свои PDisk, и постоянно печатает ошибки следующего вида:
-> `:METADATA_PROVIDER ERROR: fline=accessor_snapshot_base.cpp:68;action=cannot detect path existence;path=//Domain0/.metadata/cs_index/external;error=incorrect path status: LookupError;`
+   > [!NOTE]
+   > Важно не менять позицию заменяемого элемента в списке и не перетасовывать другие элементы. Признак изменения позиции - при рестарте очередной узел "не видит" свои PDisk, и постоянно печатает ошибки следующего вида:
+   > `:METADATA_PROVIDER ERROR: fline=accessor_snapshot_base.cpp:68;action=cannot detect path existence;path=//Domain0/.metadata/cs_index/external;error=incorrect path status: LookupError;`
 
 1. Установить обновленный файл настроек на все хосты кластера:
 
